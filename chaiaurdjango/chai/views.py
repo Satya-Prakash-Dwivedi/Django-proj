@@ -9,4 +9,4 @@ def all_chai(request):
 
 def chai_detail(request, chai_id):
     chai = get_object_or_404(chaiVariety, pk=chai_id)
-    return(request, 'chai/chai_detail.html', {'chai' : chai})
+    return render(request, 'chai/chai_detail.html', {'chai' : chai})
